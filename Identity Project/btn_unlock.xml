@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- button when clicked -->
+    <item android:drawable="@drawable/lock_button_small_clk2"
+        android:state_pressed="true" />
+
+    <!-- button on focus -->
+    <item android:drawable="@drawable/lock_button_small_clk2"
+        android:state_focused="true" />
+
+    <!-- button while normal -->
+    <item android:drawable="@drawable/lock_button_small2" />
+
+</selector>

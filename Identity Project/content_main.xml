@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="identity.identityapp.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:clickable="false">
+
+    <ImageButton
+        android:scaleType="centerInside"
+        android:layout_width="354dp"
+        android:layout_height="248dp"
+        android:id="@+id/unlockButton"
+        android:clickable="true"
+        android:src="@drawable/btn_unlock"
+        android:background="@color/colorPrimary"
+        android:onClick="onOpenLockClicked"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp" />
+
+    <ImageButton
+        android:scaleType="centerInside"
+        android:layout_width="175dp"
+        android:layout_height="190dp"
+        android:id="@+id/resetButton"
+        android:clickable="true"
+        android:src="@drawable/btn_reset"
+        android:background="@color/colorPrimary"
+        android:onClick="onResetClicked"
+        android:layout_below="@+id/unlockButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="3dp" />
+
+    <ImageButton
+        android:scaleType="centerInside"
+        android:layout_width="175dp"
+        android:layout_height="190dp"
+        android:id="@+id/pairButton"
+        android:clickable="true"
+        android:src="@drawable/btn_pair"
+        android:background="@color/colorPrimary"
+        android:onClick="onPairClicked"
+        android:layout_below="@+id/unlockButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="3dp" />
+
+    <ImageButton
+        android:scaleType="centerInside"
+        android:layout_width="175dp"
+        android:layout_height="190dp"
+        android:id="@+id/blankButton"
+        android:clickable="false"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/pairButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W E L C O M E"
+        android:id="@+id/statusText"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:layout_alignBottom="@+id/blankButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp" />
+
+</RelativeLayout>
